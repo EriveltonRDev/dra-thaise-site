@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços | Dra. Thaise Coutinho</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos específicos da página de serviços */
+        .service-category {
+            padding-top: 6rem;
+            margin-top: -4rem;
+        }
+        
+        .category-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+        }
+        
+        .service-item {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 2rem;
+            margin-bottom: 3rem;
+            background-color: var(--white-primary);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .service-image {
+            height: 100%;
+        }
+        
+        .service-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .service-details {
+            padding: 2rem;
+        }
+        
+        .service-details h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .service-details p {
+            margin-bottom: 1.5rem;
+        }
+        
+        .service-details ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 1.5rem;
+        }
+        
+        .service-details li {
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: baseline;
+        }
+        
+        .service-details li strong {
+            color: var(--black-primary);
+            margin-right: 0.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            .service-item {
+                grid-template-columns: 1fr;
+            }
+            
+            .service-image img {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>Dra. Thaise Coutinho</h1>
+                    <span>Biomédica Esteta</span>
+                </a>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="servicos.html" class="active">Serviços</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+                <div class="mobile-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </nav>
+
+            <div class="header-right">
+                <div class="social-icons">
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+                <a href="contato.html" class="btn header-cta">Agende sua Consulta</a>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Nossos Serviços</h1>
+            <p>Conheça os tratamentos estéticos avançados oferecidos pela Dra. Thaise Coutinho</p>
+        </div>
+    </section>
+
+    <!-- Introdução -->
+    <section class="services-intro section">
+        <div class="container">
+            <div class="intro-content">
+                <h2 class="section-title">Excelência em Procedimentos Estéticos</h2>
+                <p>
+                    A Dra. Thaise Coutinho oferece uma ampla gama de procedimentos estéticos avançados, 
+                    utilizando as técnicas mais modernas e produtos de alta qualidade. Todos os tratamentos 
+                    são personalizados para atender às necessidades específicas de cada paciente, garantindo 
+                    resultados naturais e duradouros.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Harmonização Facial -->
+    <section id="harmonizacao" class="service-category section">
+        <div class="container">
+            <div class="category-header">
+                <h2 class="section-title">Harmonização Facial</h2>
+                <p>
+                    Procedimentos minimamente invasivos que equilibram as proporções faciais, 
+                    realçando sua beleza natural com resultados harmoniosos.
+                </p>
+            </div>
+
+            <div class="services-list">
+                <div class="service-item">
+                    <div class="service-image">
+                        <img src="images/botox.jpg" alt="Toxina Botulínica (Botox)">
+                    </div>
+                    <div class="service-details">
+                        <h3>Toxina Botulínica (Botox)</h3>
+                        <p>
+                            Tratamento que suaviza rugas dinâmicas e linhas de expressão, proporcionando 
+                            um aspecto mais jovem e descansado. Ideal para região frontal, glabela, 
+                            pés de galinha e outras áreas.
+                        </p>
+                        <ul>
+                            <li><strong>Duração da sessão:</strong> 30 minutos</li>
+                            <li><strong>Resultados:</strong> Visíveis em 3-7 dias, duração de 4-6 meses</li>
+                            <li><strong>Recuperação:</strong> Imediata, com cuidados específicos nas primeiras 24h</li>
+                        </ul>
+                        <a href="contato.html" class="btn-outline">Agendar Consulta</a>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-image">
+                        <img src="images/preenchimento.jpg" alt="Preenchimento Facial">
+                    </div>
+                    <div class="service-details">
+                        <h3>Preenchimento Facial</h3>
+                        <p>
+                            Aplicação de ácido hialurônico para restaurar volume, definir contornos 
+                            e corrigir assimetrias. Ideal para lábios, olheiras, bigode chinês, 
+                            mandíbula e outras áreas.
+                        </p>
+                        <ul>
+                            <li><strong>Duração da sessão:</strong> 40-60 minutos</li>
+                            <li><strong>Resultados:</strong> Imediatos, duração de 9-18 meses</li>
+                            <li><strong>Recuperação:</strong> Rápida, com possível inchaço leve nos primeiros dias</li>
+                        </ul>
+                        <a href="contato.html" class="btn-outline">Agendar Consulta</a>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-image">
+                        <img src="images/bioestimuladores.jpg" alt="Bioestimuladores de Colágeno">
+                    </div>
+                    <div class="service-details">
+                        <h3>Bioestimuladores de Colágeno</h3>
+                        <p>
+                            Tratamento que estimula a produção natural de colágeno, melhorando a 
+                            firmeza e elasticidade da pele. Ideal para flacidez facial, pescoço e colo.
+                        </p>
+                        <ul>
+                            <li><strong>Duração da sessão:</strong> 60 minutos</li>
+                            <li><strong>Resultados:</strong> Progressivos, visíveis a partir de 30 dias, duração de 18-24 meses</li>
+                            <li><strong>Recuperação:</strong> Rápida, com possível inchaço e vermelhidão nos primeiros dias</li>
+                        </ul>
+                        <a href="contato.html" class="btn-outline">Agendar Consulta</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rejuvenescimento -->
+    <section id="rejuvenescimento" class="service-category section">
+        <div class="container">
+            <div class="category-header">
+                <h2 class="section-title">Rejuvenescimento</h2>
+                <p>
+                    Tratamentos avançados que combatem os sinais de envelhecimento, 
+                    devolvendo luminosidade e firmeza à pele.
+                </p>
+            </div>
+
+            <div class="services-list">
+                <div class="service-item">
+                    <div class="service-image">
+                        <img src="images/peelings.jpg" alt="Peelings Químicos">
+                    </div>
+                    <div class="service-details">
+                        <h3>Peelings Químicos</h3>
+                        <p>
+                            Tratamento que promove renovação celular através da aplicação de 
+                            substâncias químicas. Ideal para manchas, textura irregular e 
+                            rejuvenescimento geral.
+                        </p>
+                        <ul>
+                            <li><strong>Duração da sessão:</strong> 30-45 minutos</li>
+                            <li><strong>Resultados:</strong> Visíveis após 7-10 dias, protocolo de 3-6 sessões</li>
+                            <li><strong>Recuperação:</strong> 3-7 dias, dependendo da intensidade do peeling</li>
+                        </ul>
+                        <a href="contato.html" class="btn-outline">Agendar Consulta</a>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-image">
+                        <img src="images/microagulhamento.jpg" alt="Microagulhamento">
+                    </div>
+                    <div class="service-details">
+                        <h3>Microagulhamento</h3>
+                        <p>
+                            Procedimento que estimula a produção de colágeno através de microlesões 
+                            controladas. Ideal para cicatrizes de acne, estrias, rugas finas e 
+                            rejuvenescimento.
+                        </p>
+                        <ul>
+                            <li><strong>Duração da sessão:</strong> 60 minutos</li>
+                            <li><strong>Resultados:</strong> Progressivos, protocolo de 3-6 sessões</li>
+                            <li><strong>Recuperação:</strong> 2-3 dias, com vermelhidão e sensibilidade</li>
+                        </ul>
+                        <a href="contato.html" class="btn-outline">Agendar Consulta</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tratamentos Corporais -->
+    <section id="corporais" class="service-category section">
+        <div class="container">
+            <div class="category-header">
+                <h2 class="section-title">Tratamentos Corporais</h2>
+                <p>
+                    Soluções eficazes para modelar o corpo, reduzir gordura localizada 
+                    e melhorar a qualidade da pele.
+                </p>
+            </div>
+
+            <div class="services-list">
+                <div class="service-item">
+                    <div class="service-image">
+                        <img src="images/criolipolise.jpg" alt="Criolipólise">
+                    </div>
+                    <div class="service-details">
+                        <h3>Criolipólise</h3>
+                        <p>
+                            Procedimento não invasivo que reduz gordura localizada através do 
+                            congelamento das células adiposas. Ideal para abdômen, flancos, 
+                            culote e outras áreas.
+                        </p>
+                        <ul>
+                            <li><strong>Duração da sessão:</strong> 60-90 minutos por área</li>
+                            <li><strong>Resultados:</strong> Visíveis a partir de 30 dias, máximo em 90 dias</li>
+                            <li><strong>Recuperação:</strong> Imediata, com possível sensibilidade local</li>
+                        </ul>
+                        <a href="contato.html" class="btn-outline">Agendar Consulta</a>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-image">
+                        <img src="images/radiofrequencia.jpg" alt="Radiofrequência">
+                    </div>
+                    <div class="service-details">
+                        <h3>Radiofrequência</h3>
+                        <p>
+                            Tratamento que utiliza ondas eletromagnéticas para aquecer os tecidos, 
+                            estimulando colágeno e elastina. Ideal para flacidez corporal e facial.
+                        </p>
+                        <ul>
+                            <li><strong>Duração da sessão:</strong> 45-60 minutos</li>
+                            <li><strong>Resultados:</strong> Progressivos, protocolo de 6-8 sessões</li>
+                            <li><strong>Recuperação:</strong> Imediata, sem tempo de inatividade</li>
+                        </ul>
+                        <a href="contato.html" class="btn-outline">Agendar Consulta</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skincare Avançado -->
+    <section id="skincare" class="service-category section">
+        <div class="container">
+            <div class="category-header">
+                <h2 class="section-title">Skincare Avançado</h2>
+                <p>
+                    Protocolos personalizados com dermocosméticos de alta performance 
+                    para cuidados diários e resultados duradouros.
+                </p>
+            </div>
+
+            <div class="services-list">
+                <div class="service-item">
+                    <div class="service-image">
+                        <img src="images/avaliacao-facial.jpg" alt="Avaliação Facial Completa">
+                    </div>
+                    <div class="service-details">
+                        <h3>Avaliação Facial Completa</h3>
+                        <p>
+                            Análise detalhada da pele com equipamentos de diagnóstico avançados, 
+                            identificando necessidades específicas e definindo o melhor protocolo 
+                            de tratamento.
+                        </p>
+                        <ul>
+                            <li><strong>Duração da sessão:</strong> 60 minutos</li>
+                            <li><strong>Inclui:</strong> Análise de manchas, rugas, poros, oleosidade e hidratação</li>
+                            <li><strong>Resultado:</strong> Protocolo personalizado de tratamento e home care</li>
+                        </ul>
+                        <a href="contato.html" class="btn-outline">Agendar Consulta</a>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-image">
+                        <img src="images/home-care.jpg" alt="Protocolo Home Care Personalizado">
+                    </div>
+                    <div class="service-details">
+                        <h3>Protocolo Home Care Personalizado</h3>
+                        <p>
+                            Desenvolvimento de rotina de cuidados diários com dermocosméticos 
+                            de alta performance, selecionados especificamente para as necessidades 
+                            da sua pele.
+                        </p>
+                        <ul>
+                            <li><strong>Inclui:</strong> Orientação completa de uso e acompanhamento</li>
+                            <li><strong>Produtos:</strong> Dermocosméticos nacionais e importados</li>
+                            <li><strong>Benefícios:</strong> Potencializa resultados dos procedimentos em clínica</li>
+                        </ul>
+                        <a href="contato.html" class="btn-outline">Agendar Consulta</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Agende sua avaliação personalizada</h2>
+                <p>
+                    O primeiro passo para realçar sua beleza natural é uma avaliação 
+                    detalhada com a Dra. Thaise Coutinho
+                </p>
+                <a href="contato.html" class="btn">
+                    Agendar Consulta <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Button -->
+    <a 
+        href="https://wa.me/5500000000000" 
+        class="whatsapp-button"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Entre em contato pelo WhatsApp"
+    >
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Dra. Thaise Coutinho</h3>
+                    <p>Biomédica Esteta</p>
+                    <div class="footer-social">
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-services">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="servicos.html#harmonizacao">Harmonização Facial</a></li>
+                        <li><a href="servicos.html#rejuvenescimento">Rejuvenescimento</a></li>
+                        <li><a href="servicos.html#corporais">Tratamentos Corporais</a></li>
+                        <li><a href="servicos.html#skincare">Skincare Avançado</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Av. Principal, 1000, Sala 202<br>Centro, Sua Cidade - UF</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>(00) 00000-0000</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>contato@drathaisecoutinho.com.br</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Dra. Thaise Coutinho. Todos os direitos reservados.</p>
+                <p>
+                    <a href="politica-de-privacidade.html">Política de Privacidade</a> | 
+                    <a href="termos-de-uso.html">Termos de Uso</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

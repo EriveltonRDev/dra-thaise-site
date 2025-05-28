@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria | Dra. Thaise Coutinho</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos específicos da página de galeria */
+        .gallery-grid {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+        
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: var(--border-radius);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: var(--white-primary);
+            padding: 1rem;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover .gallery-caption {
+            transform: translateY(0);
+        }
+        
+        .gallery-caption h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+        
+        .gallery-caption p {
+            font-size: 0.9rem;
+            margin: 0;
+        }
+        
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>Dra. Thaise Coutinho</h1>
+                    <span>Biomédica Esteta</span>
+                </a>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="galeria.html" class="active">Galeria</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+                <div class="mobile-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </nav>
+
+            <div class="header-right">
+                <div class="social-icons">
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+                <a href="contato.html" class="btn header-cta">Agende sua Consulta</a>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Galeria</h1>
+            <p>Conheça nosso espaço e ambiente de atendimento</p>
+        </div>
+    </section>
+
+    <!-- Introdução -->
+    <section class="gallery-intro section">
+        <div class="container">
+            <div class="intro-content">
+                <h2 class="section-title">Ambiente Sofisticado e Acolhedor</h2>
+                <p>
+                    A clínica da Dra. Thaise Coutinho foi projetada para oferecer um ambiente 
+                    elegante, confortável e acolhedor, onde cada detalhe foi pensado para 
+                    proporcionar uma experiência única aos nossos pacientes. Conheça nosso 
+                    espaço, equipamentos de última geração e a atmosfera exclusiva que preparamos 
+                    para você.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria Principal -->
+    <section class="main-gallery section">
+        <div class="container">
+            <h2 class="section-title">Nossa Clínica</h2>
+            <div class="gallery-grid grid">
+                <div class="gallery-item">
+                    <img src="images/clinica-1.jpg" alt="Recepção da Clínica">
+                    <div class="gallery-caption">
+                        <h3>Recepção</h3>
+                        <p>Ambiente elegante e acolhedor para receber nossos pacientes</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/clinica-2.jpg" alt="Sala de Procedimentos">
+                    <div class="gallery-caption">
+                        <h3>Sala de Procedimentos</h3>
+                        <p>Espaço equipado com tecnologia de ponta para tratamentos estéticos</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/clinica-3.jpg" alt="Consultório">
+                    <div class="gallery-caption">
+                        <h3>Consultório</h3>
+                        <p>Ambiente privativo para consultas e avaliações personalizadas</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/clinica-4.jpg" alt="Sala de Espera">
+                    <div class="gallery-caption">
+                        <h3>Sala de Espera</h3>
+                        <p>Espaço confortável para momentos de relaxamento antes dos procedimentos</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/clinica-5.jpg" alt="Sala de Skincare">
+                    <div class="gallery-caption">
+                        <h3>Sala de Skincare</h3>
+                        <p>Ambiente dedicado aos tratamentos faciais e cuidados com a pele</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/clinica-6.jpg" alt="Fachada da Clínica">
+                    <div class="gallery-caption">
+                        <h3>Fachada</h3>
+                        <p>Localização privilegiada e fácil acesso</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipamentos -->
+    <section class="equipment-gallery section">
+        <div class="container">
+            <h2 class="section-title">Tecnologia de Ponta</h2>
+            <p class="text-center">
+                Investimos constantemente em equipamentos de última geração para oferecer 
+                os tratamentos mais avançados e eficazes do mercado.
+            </p>
+            <div class="gallery-grid grid">
+                <div class="gallery-item">
+                    <img src="images/equipamento-1.jpg" alt="Equipamento de Laser">
+                    <div class="gallery-caption">
+                        <h3>Laser Fracionado</h3>
+                        <p>Tecnologia avançada para rejuvenescimento e tratamento de manchas</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/equipamento-2.jpg" alt="Equipamento de Criolipólise">
+                    <div class="gallery-caption">
+                        <h3>Criolipólise</h3>
+                        <p>Sistema de última geração para redução de gordura localizada</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/equipamento-3.jpg" alt="Equipamento de Radiofrequência">
+                    <div class="gallery-caption">
+                        <h3>Radiofrequência</h3>
+                        <p>Tecnologia para tratamento de flacidez e estímulo de colágeno</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Venha conhecer nossa clínica</h2>
+                <p>Agende uma visita e descubra o ambiente exclusivo que preparamos para você</p>
+                <a href="contato.html" class="btn">
+                    Agendar Visita
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Button -->
+    <a 
+        href="https://wa.me/5500000000000" 
+        class="whatsapp-button"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Entre em contato pelo WhatsApp"
+    >
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Dra. Thaise Coutinho</h3>
+                    <p>Biomédica Esteta</p>
+                    <div class="footer-social">
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-services">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="servicos.html#harmonizacao">Harmonização Facial</a></li>
+                        <li><a href="servicos.html#rejuvenescimento">Rejuvenescimento</a></li>
+                        <li><a href="servicos.html#corporais">Tratamentos Corporais</a></li>
+                        <li><a href="servicos.html#skincare">Skincare Avançado</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Av. Principal, 1000, Sala 202<br>Centro, Sua Cidade - UF</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>(00) 00000-0000</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>contato@drathaisecoutinho.com.br</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Dra. Thaise Coutinho. Todos os direitos reservados.</p>
+                <p>
+                    <a href="politica-de-privacidade.html">Política de Privacidade</a> | 
+                    <a href="termos-de-uso.html">Termos de Uso</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
